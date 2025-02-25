@@ -39,6 +39,8 @@ int main() {
     printf("Digite o número de pontos turistícos da cidade da Carta 1:\n");
     scanf("%d",&numerodePontosTuristicos1);
 
+    getchar ();
+
     //Bloco de cadastro do estado e da cidade da Carta 2:
 
     printf("Digite uma letra de 'A' a 'H' para escolher o estado da Carta 2:\n");
@@ -47,9 +49,11 @@ int main() {
     printf("Digite o código da Carta 2 com a letra do estado seguida de um número de 01 a 04 (ex: A01, B03):\n");
     scanf("%s",&codigo2);
 
-    printf("Digite o nome da cidade da Carta 2:\n");
-    scanf("%s",nomedaCidade2);
+    getchar ();
 
+    printf("Digite o nome da cidade da Carta 2:\n");
+    fgets(nomedaCidade1, sizeof(nomedaCidade1), stdin);
+    
     printf("Digite a População da cidade da Carta 2:\n");
     scanf("%d",&populacao2);
 

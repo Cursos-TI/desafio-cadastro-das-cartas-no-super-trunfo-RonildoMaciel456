@@ -37,8 +37,6 @@ int main() {
     printf("Digite o número de pontos turistícos da cidade da Carta 1:\n");
     scanf("%d",&numerodePontosTuristicos1);
 
-    getchar ();
-
     //Bloco de cadastro do estado e da cidade da Carta 2:
 
     printf("Digite uma letra de 'A' a 'H' para escolher o estado da Carta 2:\n");

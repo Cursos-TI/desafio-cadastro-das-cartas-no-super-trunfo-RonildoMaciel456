@@ -20,10 +20,12 @@ int main() {
     scanf(" %c",&estado1);
 
     printf("Digite o código da Carta 1 com a letra do estado seguida de um número de 01 a 04 (ex: A01, B03):\n");
-    scanf("%s ",codigo1);
+    scanf("%s",codigo1);
+
+    getchar ();
 
     printf("Digite o nome da cidade da Carta 1:\n");
-    scanf("%s",nomedaCidade1);
+    fgets(nomedaCidade1, sizeof(nomedaCidade1), stdin);
 
     printf("Digite a População da cidade da Carta 1:\n");
     scanf("%d",&populacao1);

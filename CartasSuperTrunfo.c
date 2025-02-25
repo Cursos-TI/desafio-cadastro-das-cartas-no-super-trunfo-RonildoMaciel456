@@ -17,54 +17,50 @@ int main() {
     //Bloco de cadastro do estado e da cidade da Carta 1:
 
     printf("Digite uma letra de 'A' a 'H' para escolher o estado da Carta 1:\n");
-    scanf(" %c", &estado1);
+    scanf(" %c",&estado1);
 
     printf("Digite o código da Carta 1 com a letra do estado seguida de um número de 01 a 04 (ex: A01, B03):\n");
-    scanf("%s ", codigo1);
-
-    getchar ();
+    scanf("%s ",codigo1);
 
     printf("Digite o nome da cidade da Carta 1:\n");
-    fgets(nomedaCidade1, sizeof(nomedaCidade1), stdin);
+    scanf("%s",nomedaCidade1);
 
     printf("Digite a População da cidade da Carta 1:\n");
-    scanf("%d", &populacao1);
+    scanf("%d",&populacao1);
 
     printf("Digite a Área da cidade da Carta 1:\n");
-    scanf("%f", &area1);
+    scanf("%f",&area1);
 
     printf("Digite o PIB da cidade da Carta 1:\n");
-    scanf("%f", &pib1);
+    scanf("%f",&pib1);
 
     printf("Digite o número de pontos turistícos da cidade da Carta 1:\n");
-    scanf("%d", &numerodePontosTuristicos1);
+    scanf("%d",&numerodePontosTuristicos1);
 
     getchar ();
 
     //Bloco de cadastro do estado e da cidade da Carta 2:
 
     printf("Digite uma letra de 'A' a 'H' para escolher o estado da Carta 2:\n");
-    scanf("%c", &estado2);
+    scanf("%c",&estado2);
 
     printf("Digite o código da Carta 2 com a letra do estado seguida de um número de 01 a 04 (ex: A01, B03):\n");
-    scanf("%s", codigo2);
-
-    getchar();
+    scanf("%s",&codigo2);
 
     printf("Digite o nome da cidade da Carta 2:\n");
-    fgets(nomedaCidade2, sizeof(nomedaCidade2), stdin);
+    scanf("%s",nomedaCidade2);
 
     printf("Digite a População da cidade da Carta 2:\n");
-    scanf("%d", &populacao2);
+    scanf("%d",&populacao2);
 
     printf("Digite a Área da cidade da Carta 2:\n");
-    scanf("%f", &area2);
+    scanf("%f",&area2);
 
     printf("Digite o PIB da cidade da Carta 2:\n");
-    scanf("%f", &pib2);
+    scanf("%f",&pib2);
 
     printf("Digite o número de pontos turistícos da cidade da Carta 2:\n");
-    scanf("%d", &numerodePontosTuristicos2);
+    scanf("%d",&numerodePontosTuristicos2);
 
     //Impressão dos dados de cadastro da Carta 1:
 

@@ -39,6 +39,8 @@ int main() {
     printf("Digite o número de pontos turistícos da cidade da Carta 1:\n");
     scanf("%d",&numerodePontosTuristicos1);
 
+    printf("\n");
+
     getchar ();
 
     //Bloco de cadastro do estado e da cidade da Carta 2:
@@ -52,7 +54,7 @@ int main() {
     getchar ();
 
     printf("Digite o nome da cidade da Carta 2:\n");
-    fgets(nomedaCidade1, sizeof(nomedaCidade1), stdin);
+    fgets(nomedaCidade2, sizeof(nomedaCidade2), stdin);
     
     printf("Digite a População da cidade da Carta 2:\n");
     scanf("%d",&populacao2);
@@ -66,27 +68,31 @@ int main() {
     printf("Digite o número de pontos turistícos da cidade da Carta 2:\n");
     scanf("%d",&numerodePontosTuristicos2);
 
+    printf("\n");
+
     //Impressão dos dados de cadastro da Carta 1:
 
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
-    printf("Nome da Cidade: %s\n", nomedaCidade1);
+    printf("Nome da Cidade: %s",nomedaCidade1);
     printf("População: %d\n", populacao1);
-    printf("Área: %f km²\n", area1);
-    printf("PIB: %f bilhões de reais\n", pib1);
-    printf("Número de Pontos Turistícos: %d\n\n", numerodePontosTuristicos1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turistícos: %d\n", numerodePontosTuristicos1);
+
+    printf("\n");
 
     //Impressão dos dados de cadastro da Carta 2:
 
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
-    printf("Nome da Cidade: %s\n", nomedaCidade2);
+    printf("Nome da Cidade: %s",nomedaCidade2);
     printf("População: %d\n", populacao2);
-    printf("Área: %f km²\n", area2);
-    printf("PIB: %f bilhões de reais\n", pib2);
-    printf("Número de Pontos Turistícos: %d\n\n", numerodePontosTuristicos2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turistícos: %d", numerodePontosTuristicos2);
 
     return 0;
 }

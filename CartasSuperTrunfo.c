@@ -13,6 +13,8 @@ int main() {
     float area1,area2;
     float pib1, pib2;
     int   numerodePontosTuristicos1, numerodePontosTuristicos2;
+    float densidadePopuluacional1, densidadePopuluacional2;
+    float pibPercapita1, pibPercapita2;
 
     //Bloco de cadastro do estado e da cidade da Carta 1:
 
@@ -38,6 +40,11 @@ int main() {
 
     printf("Digite o número de pontos turistícos da cidade da Carta 1:\n");
     scanf("%d",&numerodePontosTuristicos1);
+
+    //Cálculo da densidade populacional e do PIB per Capita da Cidade de São Paulo
+    
+    densidadePopuluacional1 = populacao1 / area1;
+    pibPercapita1 = pib1 / populacao1;
 
     printf("\n");
 
@@ -67,6 +74,11 @@ int main() {
 
     printf("Digite o número de pontos turistícos da cidade da Carta 2:\n");
     scanf("%d",&numerodePontosTuristicos2);
+
+    //Cálculo da densidade populacional e do PIB per Capita da Cidade do Rio de Janeiro
+    
+    densidadePopuluacional2 = populacao2 / area2;
+    pibPercapita2 = pib2 / populacao2;
 
     printf("\n");
 

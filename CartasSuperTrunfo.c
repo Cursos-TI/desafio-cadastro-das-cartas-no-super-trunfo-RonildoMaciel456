@@ -21,7 +21,7 @@ int main() {
     //Dclaração das variáveis para comparação entre as Cartas 1 e 2: 
     //(obs: NPT = Número de Pontos Turísticos; DP = Densidade Populacional; PPC = PIB per Capita; SP = Super Poder)
 
-    int resultadoPopulação;
+    int resultadoPopulacao;
     float resultadoArea;
     float resultadoPib;
     int resultadoNPT;
@@ -29,7 +29,7 @@ int main() {
     float resultadoPPC;
     float resultadoSP;
 
-    resultadoPopulação = populacao1 > populacao2;                             
+    resultadoPopulacao = populacao1 > populacao2;                             
     resultadoArea = area1 > area2;
     resultadoPib = pib1 > pib2;
     resultadoNPT = numerodePontosTuristicos1 > numerodePontosTuristicos2;
@@ -134,7 +134,7 @@ int main() {
     //resultadoPopulação(%d),resultadoArea(%.2f),resultadoPib(%.2f),
     //resultadoNPT(%d),resultadoDP(%.2f),resultadoPPC(%.2f),resultadoSP(%f)
     printf("Comparação de Cartas: \n");
-    printf("População: %d\n",resultadoPopulação);
+    printf("População: %d\n",resultadoPopulacao);
     printf("Área: %.2f\n",resultadoArea);
     printf("PIB: %.2f\n",resultadoPib);
     printf("Pontos Turísticos: %d\n",resultadoNPT);

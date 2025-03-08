@@ -21,25 +21,6 @@ int main() {
     //Dclaração das variáveis para comparação entre as Cartas 1 e 2: 
     //(obs: NPT = Número de Pontos Turísticos; DP = Densidade Populacional; PPC = PIB per Capita; SP = Super Poder)
 
-    int resultadoPopulacao;
-    float resultadoArea;
-    float resultadoPib;
-    int resultadoNPT;
-    float resultadoDP;
-    float resultadoPPC;
-    float resultadoSP;
-
-    resultadoPopulacao = populacao1 > populacao2;                             
-    resultadoArea = area1 > area2;
-    resultadoPib = pib1 > pib2;
-    resultadoNPT = numerodePontosTuristicos1 > numerodePontosTuristicos2;
-    resultadoDP = densidadePopuluacional1 < densidadePopuluacional2;
-    resultadoPPC = pibPercapita1 > pibPercapita2;
-    resultadoSP = superPoder1 > superPoder2;
-
-
-
-
     //Bloco de cadastro do estado e da cidade da Carta 1:
     printf("Digite uma letra de 'A' a 'H' para escolher o estado da Carta 1:\n");
     scanf(" %c",&estado1);
@@ -67,7 +48,9 @@ int main() {
     //Cálculo da densidade populacional e do PIB per Capita da Cidade de São Paulo:
     densidadePopuluacional1 = populacao1 / area1;
     pibPercapita1 = (pib1 * 1000000000) / (float) populacao1;
-    superPoder1 = populacao1 + area1 + pib1 + numerodePontosTuristicos1 + densidadePopuluacional1 + pibPercapita1; 
+
+    //Cáculo do Super Poder da Carta 1: (Soma de todos os atributos da cidade)
+    superPoder1 = (float) populacao1 + area1 + pib1 + numerodePontosTuristicos1 + densidadePopuluacional1 + pibPercapita1; 
 
     printf("\n");
 
@@ -100,7 +83,9 @@ int main() {
     //Cálculo da densidade populacional e do PIB per Capita da Cidade do Rio de Janeiro:
     densidadePopuluacional2 = populacao2 / area2;
     pibPercapita2 = (pib2 * 1000000000) / (float) populacao2;
-    superPoder2 = populacao2 + area2 + pib2 + numerodePontosTuristicos2 + densidadePopuluacional2 + pibPercapita2;
+
+    //Cáculo do Super Poder da Carta 2: (Soma de todos os atributos da cidade)
+    superPoder2 = (float) populacao2 + area2 + pib2 + numerodePontosTuristicos2 + densidadePopuluacional2 + pibPercapita2;
 
     printf("\n");
 
@@ -128,18 +113,17 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turistícos: %d\n", numerodePontosTuristicos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopuluacional2);
-    printf("PIB per Capita: %.2f reais\n", pibPercapita2);
+    printf("PIB per Capita: %.2f reais\n\n", pibPercapita2);
 
     //Resultado do Jogo Super Trunfo em C: (comparações entre as Cartas 1 e 2)
-    //resultadoPopulação(%d),resultadoArea(%.2f),resultadoPib(%.2f),
-    //resultadoNPT(%d),resultadoDP(%.2f),resultadoPPC(%.2f),resultadoSP(%f)
     printf("Comparação de Cartas: \n");
-    printf("População: %d\n",resultadoPopulacao);
-    printf("Área: %.2f\n",resultadoArea);
-    printf("PIB: %.2f\n",resultadoPib);
-    printf("Pontos Turísticos: %d\n",resultadoNPT);
-    printf("Densidade Populacional: %.2f\n",resultadoDP);
-    printf("PIB per Capita: %.2f\n",resultadoPPC);
+    printf("População: Carta 1 venceu %d\n",populacao1 > populacao2);
+    printf("Área: Carta 1 venceu %d\n",area1 > area2);
+    printf("PIB: Carta 1 venceu %d\n",pib1 > pib2);
+    printf("Pontos Turísticos: Carta 1 venceu %d\n",numerodePontosTuristicos1 > numerodePontosTuristicos2);
+    printf("Densidade Populacional: Carta 2 venceu %d\n",densidadePopuluacional1 < densidadePopuluacional2);
+    printf("PIB per Capita: Carta 1 venceu %d\n",pibPercapita1 > pibPercapita2);
+    printf("Super Poder: Carta 1 venceu %d\n",superPoder1 > superPoder2);
     
     return 0;
 }

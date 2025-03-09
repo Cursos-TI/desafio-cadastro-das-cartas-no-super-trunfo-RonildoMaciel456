@@ -123,7 +123,22 @@ int main() {
     printf("Pontos Turísticos: Carta 1 venceu %d\n",numerodePontosTuristicos1 > numerodePontosTuristicos2);
     printf("Densidade Populacional: Carta 2 venceu %d\n",densidadePopuluacional1 < densidadePopuluacional2);
     printf("PIB per Capita: Carta 1 venceu %d\n",pibPercapita1 > pibPercapita2);
-    printf("Super Poder: Carta 1 venceu %d\n",superPoder1 > superPoder2);
+    printf("Super Poder: Carta 1 venceu %d\n\n",superPoder1 > superPoder2);
+
+    //Resultado do Jogo Super Trunfo em C usando lógica com estruturas de decisão If e If-else: (comparações entre as Cartas 1 e 2)
+ 
+    printf("Comparação de cartas (Densidade Populacional):\n");
+    
+    //Abaixo segue bloco de código com estrutura de decisão If e If-else usando o atributo Densidade Populacional:
+    if (densidadePopuluacional1 < densidadePopuluacional2) {
+        printf("Carta 1 - São Paulo (SP): %.2f\n",densidadePopuluacional1);
+        printf("Resultado: Carta 1 (São Paulo) venceu!"); 
+    } else {
+        printf("Carta 2 - Rio de Janeiro (RJ): %.2f\n",densidadePopuluacional2);
+        printf("Resultado: Carta 2 (Rio de Janeiro) venceu!"); 
+    }
     
     return 0;
+
 }
+

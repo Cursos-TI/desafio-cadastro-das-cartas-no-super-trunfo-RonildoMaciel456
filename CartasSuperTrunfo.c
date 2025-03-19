@@ -146,23 +146,46 @@ int main() {
     (comparações entre as Cartas 1 e 2)
     */
 
-    int escolhaJogador;
+    int atributo1, atributo2;
+    int escolha;
+    char atributoTexto1[50] = '1. População'; 
+    char atributoTexto2[50] = '2. Área'; 
+    char atributoTexto3[50] = '3. PIB';
+    char atributoTexto4[50] = '4. Número de Pontos Túrísticos';
+    char atributoTexto5[50] = '5. Densidade Demográfica';
+
     
     //Menu do Jogo:
     printf("*** Jogo do Super Trunfo Países ***\n");
-    printf("Escolha uma opção:\n");
-    printf("1. População\n");
-    printf("2. Área\n");
-    printf("3. PIB\n");
-    printf("4. Número de Pontos Turísticos\n");
-    printf("5. Densidade Demográfica\n");
+    printf("Escolha o 1º atributo:\n");
+    printf("%s\n",atributoTexto1);
+    printf("%s\n",atributoTexto2);
+    printf("%s\n",atributoTexto3);
+    printf("%s\n",atributoTexto4);
+    printf("%s\n",atributoTexto5);
     printf("Escolha: ");
-    scanf("%d",&escolhaJogador);
+    scanf("%d",&atributo1);
+    scanf("%s",&escolha);
 
+    
+    
+    printf("*** Jogo do Super Trunfo Países ***\n");
+    printf("Escolha o 2º atributo:\n");
+    printf("%s\n",atributoTexto1);
+    printf("%s\n",atributoTexto2);
+    printf("%s\n",atributoTexto3);
+    printf("%s\n",atributoTexto4);
+    printf("%s\n",atributoTexto5);
+    printf("Escolha: ");
+    scanf("%d",&atributo2);
+
+
+    
+    /*
     //Bloco de código onde as decisões são tomadas de acordo com a escolha do jogador:
-    switch (escolhaJogador)
+    switch (atributo1)
     {
-        case 1:
+        case '1':
         if (populacao1 > populacao2)
         {
             printf("%s VS %s\n", pais1,pais2);
@@ -292,9 +315,11 @@ int main() {
             printf("Opção Inválida!");
         
         break;
+        
 
 
     }
+    */
     
     return 0;
 

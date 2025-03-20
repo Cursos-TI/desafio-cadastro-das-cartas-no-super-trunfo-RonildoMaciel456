@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-
+#include <string.h> //Biblioteca que inclui para manipular strings com o uso de 'strcpy' e 'strcmp'
 
 int main() {
     
@@ -145,17 +144,16 @@ int main() {
     e usando lógica com estruturas de decisão If e If-else: 
     (comparações entre as Cartas 1 e 2)
     */
+    char atributoString1[40], atributoString2[40];
+    int atributoEscolhido1, atributoEscolhido2;
+    char atributoTexto1[40] = "1.População"; 
+    char atributoTexto2[40] = "2.Área"; 
+    char atributoTexto3[40] = "3.PIB";
+    char atributoTexto4[40] = "4.Número de Pontos Turísticos";
+    char atributoTexto5[40] = "5.Densidade Demográfica";
 
-    int atributo1, atributo2;
-    int escolha;
-    char atributoTexto1[50] = '1. População'; 
-    char atributoTexto2[50] = '2. Área'; 
-    char atributoTexto3[50] = '3. PIB';
-    char atributoTexto4[50] = '4. Número de Pontos Túrísticos';
-    char atributoTexto5[50] = '5. Densidade Demográfica';
-
-    
     //Menu do Jogo:
+    //(1º Menu)
     printf("*** Jogo do Super Trunfo Países ***\n");
     printf("Escolha o 1º atributo:\n");
     printf("%s\n",atributoTexto1);
@@ -164,23 +162,141 @@ int main() {
     printf("%s\n",atributoTexto4);
     printf("%s\n",atributoTexto5);
     printf("Escolha: ");
-    scanf("%d",&atributo1);
-    scanf("%s",&escolha);
+    scanf("%d",&atributoEscolhido1);
 
+    /*
+    Aqui eu pesquisei e utilizei algumas funções em C além do que é ensinado 
+    pelo professor neste nível de aprendizado. 
+    Aqui a função strcpy() é usada para substituir ou copiar o texto ou valor
+    da string que é a opção escolhida por uma string vazia (""),
+    removendo a string caso a opção seja escolhida pelo jogador. 
+    Ou seja a função strcpy() é uma função da linguagem em C que 
+    serve para copiar o conteúdo de uma string para outra.(nesse caso para uma
+    string vazia ("")). Mas antes eu também utilizo strcpy() para salvar o valor de 
+    "atributoTextoX" em "atributoString1"(uma variável que criei para exibir mais
+    á frente qual opção o jogador escolheu), faço isso pra garantir que o valor
+    da opção de texto apagada seja salva em outra variável antes de ser apagada: 
+    */
     
+    // Switch para remover a opção escolhida
+    switch (atributoEscolhido1) {
+        case 1:
+            // Copia o valor de atributoTexto1 para atributoString1 antes que a String seja apagada.
+            strcpy(atributoString1,atributoTexto1);
+            // Remove a opção caso seja escolhida pelo jogador no 1º Menu.
+            strcpy(atributoTexto1, "");
+            printf("\n");
+            break;
+        case 2:
+            strcpy(atributoString1,atributoTexto2);
+            strcpy(atributoTexto2, "");
+            printf("\n");  
+            break;
+        case 3:
+            strcpy(atributoString1,atributoTexto3);
+            strcpy(atributoTexto3, "");
+            printf("\n");
+            break;
+        case 4:
+            strcpy(atributoString1,atributoTexto4);
+            strcpy(atributoTexto4, "");
+            printf("\n"); 
+            break;
+        case 5:
+            strcpy(atributoString1,atributoTexto5);
+            strcpy(atributoTexto5, "");
+            printf("\n");
+            break;
+        default:
+            printf("Opção inválida!\n");
+            break;
+    }
+
+    //Menu 2º após a escolha. Aqui o jogador irá escolher o 2º atributo:
+    printf("Escolha o 2º atributo: \n");
     
-    printf("*** Jogo do Super Trunfo Países ***\n");
-    printf("Escolha o 2º atributo:\n");
-    printf("%s\n",atributoTexto1);
-    printf("%s\n",atributoTexto2);
-    printf("%s\n",atributoTexto3);
-    printf("%s\n",atributoTexto4);
-    printf("%s\n",atributoTexto5);
+    /*
+    Aqui vemos mais uma função em C fora a parte que eu pesquisei. A função "strcmp()"
+    Essa função serve para comparar duas strings.
+    Aqui ela verifica se a string está vazia antes de imprimir
+    Se a string vazia tiver ou seja retornar valor diferente de zero (!= 0),
+    ela será impressa pois significa que ela não está vazia e poderá aparecer 
+    impressa no 2º Menu. Isso garante que a oopção que já foi escolhida pelo
+    jogador no 1º Menu e que foi removida, não apareça no 2º Menu:
+    */
+
+    if (strcmp(atributoTexto1, "") != 0) {
+            printf("%s\n", atributoTexto1);
+    } 
+    if (strcmp(atributoTexto2, "") != 0) {
+            printf("%s\n", atributoTexto2);
+    }
+    if (strcmp(atributoTexto3, "") != 0) {
+            printf("%s\n", atributoTexto3);
+    }  
+    if (strcmp(atributoTexto4, "") != 0) {
+            printf("%s\n", atributoTexto4);
+    } 
+    if (strcmp(atributoTexto5, "") != 0) {
+            printf("%s\n", atributoTexto5);
+    }
+    
     printf("Escolha: ");
-    scanf("%d",&atributo2);
-
-
+    scanf("%d",&atributoEscolhido2);
+    printf("\n");
     
+    switch (atributoEscolhido2)
+    {
+    case 1:
+    if (atributoEscolhido1 == atributoEscolhido2) {
+        printf("Opção Inválida! Você escolheu o mesmo atributo!\n");
+    } else {
+        strcpy(atributoString2, atributoTexto1);
+        printf("%s VS %s\n", pais1, pais2);
+        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+    }
+        break;
+    case 2:
+    if (atributoEscolhido1 == atributoEscolhido2) {
+        printf("Opção Inválida! Você escolheu o mesmo atributo!\n");
+    } else {
+        strcpy(atributoString2, atributoTexto2);
+        printf("%s VS %s", pais1, pais2);
+        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+    }
+        break;
+    case 3:
+    if (atributoEscolhido1 == atributoEscolhido2) {
+        printf("Opção Inválida! Você escolheu o mesmo atributo!\n");
+    } else {
+        strcpy(atributoString2, atributoTexto3);
+        printf("%s VS %s", pais1, pais2);
+        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+    }
+        break;
+    case 4:
+    if (atributoEscolhido1 == atributoEscolhido2) {
+        printf("Opção Inválida! Você escolheu o mesmo atributo!\n");
+    } else {
+        strcpy(atributoString2, atributoTexto4);
+        printf("%s VS %s", pais1, pais2);
+        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+    }
+        break;
+    case 5:
+    if (atributoEscolhido1 == atributoEscolhido2) {
+        printf("Opção Inválida! Você escolheu o mesmo atributo!\n");
+    } else {
+        strcpy(atributoString2, atributoTexto5);
+        printf("%s VS %s", pais1, pais2);
+        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+    }
+        break;
+    default:
+        printf("Opção Inválida!");
+        break;
+    }
+
     /*
     //Bloco de código onde as decisões são tomadas de acordo com a escolha do jogador:
     switch (atributo1)

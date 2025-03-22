@@ -153,8 +153,8 @@ int main() {
     char atributoTexto3[40] = "3.PIB";
     char atributoTexto4[40] = "4.Número de Pontos Turísticos";
     char atributoTexto5[40] = "5.Densidade Demográfica";
-    //variáveis para a soma dos dois atributos escolhidos pelo jogador:
-    int somaDosAtributos1, somaDosAtributos2;
+    //variáveis para armazenar o resultado das somas do 2 atributos escolhidos para cada país:
+    int resultado;
 
     //Mênu do Jogo:
     //(1º Menu)
@@ -182,47 +182,61 @@ int main() {
     da opção de texto apagada seja salva em outra variável antes de ser apagada: 
     */
     
-    // Switch para remover a opção escolhida
+    /*
+    Switch para remover a opção escolhida e com lógica implementada para decidir o páis vencedor em cada
+    um dos atributos. Aqui foi usada a estrutura de ternário para implementar a lógica.
+    */
+
     switch (atributoEscolhido1) {
         case 1:
+            strcpy(atributoString1,atributoTexto1);
             printf("%s VS %s", pais1, pais2);
+            printf("Você escolheu o atributo: %s\n", atributoString1);
+            printf("%s : %d / %s : %d\n",pais1, populacao1, pais2, populacao2);
             populacao1 > populacao2 ? printf("O País %s da Carta 1 venceu no atributo 1.População!\n", pais1) 
             : printf("O País %s da Carta 2 venceu no atributo 1.População!\n", pais2);
-            strcpy(atributoString1,atributoTexto1);
             strcpy(atributoTexto1, "");
             printf("\n");
             break;
         case 2:
+            strcpy(atributoString1,atributoTexto2);
             printf("%s VS %s", pais1, pais2);
+            printf("Você escolheu o atributo: %s\n", atributoString1);
+            printf("%s : %.2f km² / %s : %.2f km²\n",pais1, area1, pais2, area2);
             area1 > area2 ? printf("O Pís %s da Carta 1 venceu no atributo 2.Área!\n", pais1) 
             : printf("O País%s da Carta 2 venceu no atributo 2.Área!\n", pais2);
-            strcpy(atributoString1,atributoTexto2);
             strcpy(atributoTexto2, "");
             printf("\n");  
             break;
         case 3:
+            strcpy(atributoString1,atributoTexto3);
             printf("%s VS %s", pais1, pais2);
+            printf("Você escolheu o atributo: %s\n", atributoString1);
+            printf("%s : US$ %.2f trilhões / %s : US$ %.2f trilhões\n",pais1, pib1, pais2, pib2);
             pib1 > pib2 ? printf("O País %s da Carta 1 venceu no atributo 3.PIB!\n", pais1) 
             : printf("O País %s da Carta 2 venceu no atributo 3.PIB!\n", pais2);
-            strcpy(atributoString1,atributoTexto3);
             strcpy(atributoTexto3, "");
             printf("\n");
             break;
         case 4:
+            strcpy(atributoString1,atributoTexto4);
             printf("%s VS %s", pais1, pais2);
+            printf("Você escolheu o atributo: %s\n", atributoString1);
+            printf("%s : %d / %s : %d\n",pais1, numerodePontosTuristicos1, pais2, numerodePontosTuristicos2);
             numerodePontosTuristicos1 > numerodePontosTuristicos2 ? 
             printf("O País %s da Carta 1 venceu no atributo 4.Número de Pontos Turísticos!\n", pais1) 
             : printf("O País %s da Carta 2 venceu no atributo 4.Número de Pontos Turísticos!\n", pais2);
-            strcpy(atributoString1,atributoTexto4);
             strcpy(atributoTexto4, "");
             printf("\n"); 
             break;
         case 5:
+            strcpy(atributoString1,atributoTexto5);
             printf("%s VS %s", pais1, pais2);
+            printf("Você escolheu o atributo: %s\n", atributoString1);
+            printf("%s : %.2f hab/km² / %s : %.2f hab/km²\n",pais1, densidadeDemografica1, pais2, densidadeDemografica2);
             densidadeDemografica1 < densidadeDemografica2 ? 
             printf("O País %s da Carta 1 venceu no atributo 5.Densidade Demográfica!\n", pais1) 
             : printf("O País %s da Carta 2 venceu no atributo 5.Densidade DEmográfica!\n", pais2);
-            strcpy(atributoString1,atributoTexto5);
             strcpy(atributoTexto5, "");
             printf("\n");
             break;
@@ -272,7 +286,8 @@ int main() {
     } else {
         strcpy(atributoString2, atributoTexto1);
         printf("%s VS %s\n", pais1, pais2);
-        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+        printf("Você escolheu o atributo: %s\n", atributoString2);
+        printf("%s : %d / %s : %d\n",pais1, populacao1, pais2, populacao2);
         populacao1 < populacao2 ? printf("O País %s da Carta 2 venceu no atributo 1.População!\n", pais2) 
         : printf("O País %s da Carta 1 venceu no atributo 1.População!\n", pais1);
     }
@@ -283,7 +298,8 @@ int main() {
     } else {
         strcpy(atributoString2, atributoTexto2);
         printf("%s VS %s", pais1, pais2);
-        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+        printf("Você escolheu o atributo: %s\n", atributoString2);
+        printf("%s : %.2f km² / %s : %.2f km²\n",pais1, area1, pais2, area2);
         area1 < area2 ? printf("O País %s da Carta 2 venceu no atributo 2.Área!\n", pais2) 
         : printf("O País %s da Carta 1 venceu no atributo 2.Área!\n", pais1);
     }
@@ -294,7 +310,8 @@ int main() {
     } else {
         strcpy(atributoString2, atributoTexto3);
         printf("%s VS %s", pais1, pais2);
-        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+        printf("Você escolheu o atributo: %s\n", atributoString2);
+        printf("%s : US$ %.2f trilhões / %s : US$ %.2f trilhões\n",pais1, pib1, pais2, pib2);
         pib1 < pib2 ? printf("O País %s da Carta 2 venceu no atributo 3.PIB!\n", pais2) 
         : printf("O País %s da Carta 1 venceu no atributo 3.PIB!\n", pais1);
     }
@@ -305,8 +322,9 @@ int main() {
     } else {
         strcpy(atributoString2, atributoTexto4);
         printf("%s VS %s", pais1, pais2);
-        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
-        numerodePontosTuristicos1 < numerodePontosTuristicos2 ? 
+        printf("Você escolheu o atributo: %s\n", atributoString2);
+        printf("%s : %d / %s : %d\n",pais1, numerodePontosTuristicos1, pais2, numerodePontosTuristicos2);
+        numerodePontosTuristicos1 > numerodePontosTuristicos2 ? 
         printf("O País %s da Carta 2 venceu no atributo 4.Número de Pontos Turísticos!\n", pais2) 
         : printf("O País %s da Carta 1 venceu no atributo 4.Número de Pontos Turísticos!\n", pais1);
     }
@@ -317,7 +335,8 @@ int main() {
     } else {
         strcpy(atributoString2, atributoTexto5);
         printf("%s VS %s", pais1, pais2);
-        printf("Você escolheu os atributos: %s e %s\n", atributoString1, atributoString2);
+        printf("Você escolheu o atributo: %s\n", atributoString2);
+        printf("%s : %.2f hab/km² / %s : %.2f hab/km²\n",pais1, populacao1, pais2, populacao2);
         densidadeDemografica1 > densidadeDemografica2 ? 
         printf("O País %s da Carta 2 venceu no atributo 5.Densidade Demográfica!\n", pais2) 
         : printf(" País %s da Carta 1 venceu no atributo 5.Densidade Demográfica!\n", pais1);
@@ -327,6 +346,11 @@ int main() {
         printf("Opção Inválida!");
         break;
     }
+
+   
+
+
+
 
     /*
     switch (atributo1)

@@ -312,12 +312,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopArea1, pais2, somaPopArea2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopArea1, pais2, somaPopArea2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto2Vers2) == 0 && strcmp(atributoString2,atributoTexto3) == 0 
     || strcmp(atributoString1,atributoTexto3Vers2) == 0 && strcmp(atributoString2,atributoTexto2) == 0) {
@@ -327,12 +329,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaPib1, pais2, somaAreaPib2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaPib1, pais2, somaAreaPib2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto3Vers2) == 0 && strcmp(atributoString2,atributoTexto4) == 0 
     || strcmp(atributoString1,atributoTexto4Vers2) == 0 && strcmp(atributoString2,atributoTexto3) == 0) {
@@ -342,12 +346,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPibNPT1, pais2, somaPibNPT2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPibNPT1, pais2, somaPibNPT2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         } 
     } else if(strcmp(atributoString1,atributoTexto4Vers2) == 0 && strcmp(atributoString2,atributoTexto5) == 0 
     || strcmp(atributoString1,atributoTexto5Vers2) == 0 && strcmp(atributoString2,atributoTexto4) == 0 ) {
@@ -357,12 +363,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaNPTDens1, pais2, somaNPTDens2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaNPTDens1, pais2, somaNPTDens2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         } 
     } else if(strcmp(atributoString1,atributoTexto1Vers2) == 0 && strcmp(atributoString2,atributoTexto3) == 0 
     || strcmp(atributoString1,atributoTexto3Vers2) == 0 && strcmp(atributoString2,atributoTexto1) == 0 ) {
@@ -372,12 +380,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopPib1, pais2, somaPopPib2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopPib1, pais2, somaPopPib2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto1Vers2) == 0 && strcmp(atributoString2,atributoTexto4) == 0 
     || strcmp(atributoString1,atributoTexto4Vers2) == 0 && strcmp(atributoString2,atributoTexto1) == 0 ) {
@@ -387,12 +397,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopNPT1, pais2, somaPopNPT2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopNPT1, pais2, somaPopNPT2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto1Vers2) == 0 && strcmp(atributoString2,atributoTexto5) == 0 
     || strcmp(atributoString1,atributoTexto5Vers2) == 0 && strcmp(atributoString2,atributoTexto1) == 0 ) {
@@ -402,12 +414,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopDens1, pais2, somaPopDens2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPopDens1, pais2, somaPopDens2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto2Vers2) == 0 && strcmp(atributoString2,atributoTexto4) == 0 
     || strcmp(atributoString1,atributoTexto4Vers2) == 0 && strcmp(atributoString2,atributoTexto2) == 0 ) {
@@ -417,12 +431,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaNPT1, pais2, somaAreaNPT2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaNPT1, pais2, somaAreaNPT2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto2Vers2) == 0 && strcmp(atributoString2,atributoTexto5) == 0 
     || strcmp(atributoString1,atributoTexto5Vers2) == 0 && strcmp(atributoString2,atributoTexto2) == 0 ) {
@@ -432,12 +448,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaDens1, pais2, somaAreaDens2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaAreaDens1, pais2, somaAreaDens2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto3Vers2) == 0 && strcmp(atributoString2,atributoTexto5) == 0 
     || strcmp(atributoString1,atributoTexto5Vers2) == 0 && strcmp(atributoString2,atributoTexto3) == 0 ) {
@@ -447,12 +465,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPibDens1, pais2, somaPibDens2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaPibDens1, pais2, somaPibDens2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } else if(strcmp(atributoString1,atributoTexto4Vers2) == 0 && strcmp(atributoString2,atributoTexto5) == 0 
     || strcmp(atributoString1,atributoTexto5Vers2) == 0 && strcmp(atributoString2,atributoTexto4) == 0 ) {
@@ -462,12 +482,14 @@ int main() {
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaNPTDens1, pais2, somaNPTDens2);
             printf("A Carta 1 do País %s Venceu!\n",pais1);
+            printf("### FIM DE JOGO! ###");
         } else {
             printf("*** Soma dos Atributos escolhidos de cada carta ***\n\n");
             printf("Carta 1 / %s: %s + %s\n",pais1,atributoString1,atributoString2);
             printf("Carta 2 / %s: %s + %s\n",pais2,atributoString1,atributoString2);
             printf("%s : %d / %s : %d\n",pais1, somaNPTDens1, pais2, somaNPTDens2);
             printf("A Carta 2 do País %s Venceu!\n",pais2);
+            printf("### FIM DE JOGO! ###");
         }
     } 
 

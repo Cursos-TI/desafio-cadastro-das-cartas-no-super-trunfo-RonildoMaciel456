@@ -17,13 +17,13 @@ int main() {
     printf("Digite o nome do País da Carta 1:\n");
     fgets(pais1, sizeof(pais1), stdin);
 
-    printf("Digite a População do País da Carta 1:\n");
+    printf("Digite a População do País da Carta 1 (ex: 123456789 sem casas decimais):\n");
     scanf("%d",&populacao1);
 
-    printf("Digite a Área do País da Carta 1:\n");
+    printf("Digite a Área do País da Carta 1 (ex: 9999.99 com duas casas decimais):\n");
     scanf("%f",&area1);
 
-    printf("Digite o PIB do País da Carta 1:\n");
+    printf("Digite o PIB do País da Carta 1 (ex: 99.99 com duas casas decimais):\n");
     scanf("%f",&pib1);
 
     printf("Digite o número de pontos turistícos do País da Carta 1:\n");
@@ -38,13 +38,13 @@ int main() {
     printf("Digite o nome do País da Carta 2:\n");
     fgets(pais2, sizeof(pais2), stdin);
     
-    printf("Digite a População do País da Carta 2:\n");
+    printf("Digite a População do País da Carta 2 (ex: 123456789 sem casas decimais):\n");
     scanf("%d",&populacao2);
 
-    printf("Digite a Área do País da Carta 2:\n");
+    printf("Digite a Área do País da Carta 2 (ex: 9999.99 com duas casas decimais):\n");
     scanf("%f",&area2);
 
-    printf("Digite o PIB do País da Carta 2:\n");
+    printf("Digite o PIB do País da Carta 2 (ex: 99.99 com duas casas decimais):\n");
     scanf("%f",&pib2);
 
     printf("Digite o número de pontos turistícos do País da Carta 2:\n");
